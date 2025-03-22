@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Energy Physics Society in Vietnam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container { max-width: 800px; margin: auto; background: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; }
+        .lang-switch { margin: 20px; }
+        .menu { background: rgba(51, 51, 51, 0.8); padding: 10px; border-radius: 5px; }
+        .menu a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
+    </style>
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.content').forEach(el => el.style.display = 'none');
+            document.getElementById(lang).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html">Introduction</a>
+        <a href="science.html">Science</a>
+        <a href="research.html">Research</a>
+        <a href="publication.html">Publication</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h1>High Energy Physics Society in Vietnam</h1>
+        <div class="lang-switch">
+            <button onclick="switchLang('en')">English</button>
+            <button onclick="switchLang('vi')">Tiếng Việt</button>
+        </div>
+
+        <div id="en" class="content" style="display: block;">
+            <h2>Our Research Focus</h2>
+            <p>We study high-energy physics with a focus on the Belle-II and T2K experiments, as well as collider phenomenology.</p>
+            <h3>Belle-II Experiment</h3>
+            <p>Investigating CP violation and new physics in B meson decays.</p>
+            <h3>T2K Experiment</h3>
+            <p>Exploring neutrino oscillations and measuring θ<sub>23</sub> with high precision.</p>
+            <h3>Collider Phenomenology</h3>
+            <p>Theoretical research on particle interactions at high energies.</p>
+        </div>
+
+        <div id="vi" class="content" style="display: none;">
+            <h2>Trọng tâm nghiên cứu</h2>
+            <p>Chúng tôi nghiên cứu vật lý năng lượng cao với trọng tâm là các thí nghiệm Belle-II, T2K và hiện tượng luận va chạm.</p>
+            <h3>Thí nghiệm Belle-II</h3>
+            <p>Nghiên cứu vi phạm CP và vật lý mới trong phân rã meson B.</p>
+            <h3>Thí nghiệm T2K</h3>
+            <p>Khám phá dao động neutrino và đo góc θ<sub>23</sub> với độ chính xác cao.</p>
+            <h3>Hiện tượng luận va chạm</h3>
+            <p>Nghiên cứu lý thuyết về các tương tác hạt ở mức năng lượng cao.</p>
+        </div>
+    </div>
+</body>
+</html>
+
